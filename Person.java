@@ -6,7 +6,7 @@ public class Person {
 
     private String name;
     private int qty;
-    private BigDecimal price;
+
 
     public String getName() {
         return name;
@@ -24,25 +24,17 @@ public class Person {
         this.qty = qty;
     }
 
-    public BigDecimal getPrice() {
-        return price;
-    }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
 
     @Override
     public String toString() {
         return "Person{" +
                 "name=" + name +
                 ", age=" + qty +
-                ",salary="+price+
                 '}';
     }
     public Person(String name, int qty, BigDecimal price){
         this.setName(name);
-        this.setPrice(price);
         this.setQty(qty);
     }
 
